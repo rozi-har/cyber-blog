@@ -1,0 +1,14 @@
+baseURL = "https://cyber-blog.pages.dev/"
+theme = "PaperMod"
+defaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    label = "English"
+    locale = "en-US"
+    title = "Rozi · Cyber & AI"
+    weight = 1
+  [languages.fr]
+    label = "Français"
+    locale = "fr-FR"
+    title = "Rozi · Cyber & IA"
