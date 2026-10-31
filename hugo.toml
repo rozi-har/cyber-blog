@@ -1,4 +1,4 @@
-baseURL = "https://cyber-blog.pages.dev/"
+baseURL = "/"
 theme = "PaperMod"
 defaultContentLanguage = "en"
 
