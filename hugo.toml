@@ -12,3 +12,13 @@ defaultContentLanguage = "en"
     label = "Français"
     locale = "fr-FR"
     title = "Rozi · Cyber & IA"
+
+[[languages.en.menus.main]]
+  name = "About"
+  pageRef = "about"
+  weight = 10
+
+[[languages.fr.menus.main]]
+  name = "À propos"
+  pageRef = "about"
+  weight = 10
