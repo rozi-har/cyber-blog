@@ -1,0 +1,36 @@
+
+/* Fractal banner */
+
+body::before {
+  content: "";
+  display: block;
+  height: 210px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(5, 2, 15, 0.05) 45%,
+      rgba(18, 18, 20, 0.65) 100%
+    ),
+    url("/img/fractal-banner-2048.webp")
+      center 48% / cover no-repeat;
+
+  border-bottom: 1px solid rgba(185, 149, 255, 0.15);
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  body::before {
+    height: 130px;
+
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(5, 2, 15, 0.05) 45%,
+        rgba(18, 18, 20, 0.65) 100%
+      ),
+      url("/img/fractal-banner-small.webp")
+        center / cover no-repeat;
+  }
+}

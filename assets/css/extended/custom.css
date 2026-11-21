@@ -1,0 +1,145 @@
+
+/* =========================================
+   ROZI - CYBER & AI BLOG
+   ========================================= */
+
+:root {
+  --blog-bg: #121214;
+  --blog-card: #1c1c20;
+  --blog-border: rgba(255, 255, 255, 0.08);
+  --blog-purple: #b995ff;
+  --blog-purple-soft: rgba(185, 149, 255, 0.12);
+  --blog-text: #e4e2e7;
+  --blog-muted: #a4a1aa;
+}
+
+/* Global background */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--blog-bg);
+}
+
+/* Main content width */
+
+main,
+.main,
+.page,
+.content {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Links */
+
+a {
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+a:hover {
+  color: var(--blog-purple);
+}
+
+/* Article cards - common Hugo theme selectors */
+
+.post-entry,
+.post-card,
+article.post,
+article.post-item {
+  background: var(--blog-card);
+  border: 1px solid var(--blog-border);
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 24px;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.post-entry:hover,
+.post-card:hover,
+article.post:hover,
+article.post-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(185, 149, 255, 0.35);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Article headings */
+
+.post-entry h2,
+.post-entry h3,
+article h1,
+article h2 {
+  letter-spacing: -0.03em;
+}
+
+/* Tags */
+
+.tag,
+.tags a,
+.post-tags a,
+a[rel="tag"] {
+  color: var(--blog-purple);
+}
+
+/* Metadata */
+
+.post-meta,
+.meta,
+.post-date,
+time {
+  color: var(--blog-muted);
+  font-size: 0.85rem;
+}
+
+/* Selection */
+
+::selection {
+  background: rgba(185, 149, 255, 0.3);
+  color: white;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--blog-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #39313f;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blog-purple);
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  main,
+  .main,
+  .page,
+  .content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .post-entry,
+  .post-card,
+  article.post,
+  article.post-item {
+    padding: 18px;
+    border-radius: 12px;
+  }
+}
